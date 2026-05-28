@@ -5,14 +5,17 @@
 }
 
 body {
-  font-family: Arial;
+  font-family: Arial, sans-serif;
+
   background:
     radial-gradient(circle at top,
     #1b4332,
     #081c15 70%);
 
   color: white;
+
   overflow-x: hidden;
+
   transition: 0.5s;
 }
 
@@ -25,10 +28,16 @@ body.light {
   color: #081c15;
 }
 
+/* NAVBAR */
+
 nav {
   position: fixed;
+
   top: 0;
+  left: 0;
+
   width: 100%;
+
   padding: 20px 50px;
 
   display: flex;
@@ -47,8 +56,8 @@ nav {
 }
 
 nav h1 {
-  color: #95d5b2;
   font-size: 32px;
+  color: #95d5b2;
 }
 
 .nav-buttons {
@@ -59,8 +68,10 @@ nav h1 {
 
 .nav-buttons button {
   padding: 12px 20px;
-  border-radius: 14px;
+
   border: none;
+  border-radius: 14px;
+
   cursor: pointer;
 
   background:
@@ -77,11 +88,18 @@ body.light .nav-buttons button {
 
 .nav-buttons button:hover {
   transform: translateY(-3px);
+
+  background:
+    rgba(255,255,255,0.15);
 }
+
+/* PÁGINAS */
 
 .pagina {
   display: none;
+
   min-height: 100vh;
+
   padding:
     140px 50px 80px;
 }
@@ -90,11 +108,16 @@ body.light .nav-buttons button {
   display: block;
 }
 
+/* HERO */
+
 .hero {
   display: flex;
+
   justify-content: center;
   align-items: center;
+
   gap: 60px;
+
   flex-wrap: wrap;
 }
 
@@ -104,31 +127,41 @@ body.light .nav-buttons button {
 
 .tag {
   color: #95d5b2;
+
   letter-spacing: 3px;
+
   margin-bottom: 20px;
 }
 
 .hero h2 {
   font-size: 80px;
+
   line-height: 1.1;
 }
 
 .descricao {
   margin-top: 25px;
+
   font-size: 22px;
+
   line-height: 1.8;
 }
 
 .hero-buttons {
   margin-top: 40px;
+
   display: flex;
+
   gap: 20px;
+
   flex-wrap: wrap;
 }
 
 .hero img {
   width: 600px;
+
   max-width: 100%;
+
   border-radius: 30px;
 
   box-shadow:
@@ -136,10 +169,14 @@ body.light .nav-buttons button {
     rgba(149,213,178,0.3);
 }
 
+/* BOTÕES */
+
 .main-btn {
   padding: 16px 32px;
+
   border: none;
   border-radius: 16px;
+
   cursor: pointer;
 
   background:
@@ -148,13 +185,14 @@ body.light .nav-buttons button {
     #52b788);
 
   color: white;
+
   font-size: 18px;
+
+  transition: 0.3s;
 
   box-shadow:
     0px 0px 25px
     rgba(82,183,136,0.4);
-
-  transition: 0.3s;
 }
 
 .main-btn:hover {
@@ -177,14 +215,23 @@ body.light .nav-buttons button {
   cursor: pointer;
 
   font-size: 18px;
+
+  transition: 0.3s;
+}
+
+.secondary-btn:hover {
+  transform: scale(1.05);
 }
 
 body.light .secondary-btn {
   color: #081c15;
 }
 
+/* GLASS CARD */
+
 .glass-card {
   max-width: 850px;
+
   margin: auto;
 
   padding: 45px;
@@ -204,7 +251,7 @@ body.light .secondary-btn {
 
 body.light .glass-card {
   background:
-    rgba(255,255,255,0.8);
+    rgba(255,255,255,0.85);
 }
 
 .glass-card h2 {
@@ -236,11 +283,17 @@ body.light .glass-card {
   text-align: left;
 }
 
+/* DASHBOARD */
+
 .dashboard {
   display: flex;
+
   justify-content: center;
+
   gap: 30px;
+
   flex-wrap: wrap;
+
   margin-top: 60px;
 }
 
@@ -272,23 +325,31 @@ body.light .card {
 
 .card p {
   font-size: 45px;
+
   color: #95d5b2;
+
   font-weight: bold;
+
   margin-top: 15px;
 }
 
 .titulo {
   text-align: center;
+
   font-size: 60px;
 }
 
+/* ALERTAS */
+
 .alertas {
   max-width: 900px;
+
   margin: 70px auto;
 }
 
 .alertas h3 {
   font-size: 35px;
+
   margin-bottom: 25px;
 }
 
@@ -303,14 +364,19 @@ body.light .card {
   margin-bottom: 20px;
 }
 
+/* CHATBOT */
+
 .chat-container {
   max-width: 900px;
+
   margin: auto;
 }
 
 .chat-container h2 {
   text-align: center;
+
   font-size: 60px;
+
   margin-bottom: 40px;
 }
 
@@ -360,8 +426,11 @@ body.light .card {
 
 .chat-input {
   display: flex;
+
   gap: 15px;
+
   margin-top: 25px;
+
   flex-wrap: wrap;
 }
 
@@ -386,20 +455,148 @@ body.light .chat-input input {
   color: #081c15;
 }
 
+/* RESPONSIVIDADE */
+
 @media(max-width: 768px) {
 
-  .hero h2 {
-    font-size: 55px;
-  }
-
-  .titulo,
-  .chat-container h2,
-  .glass-card h2 {
-    font-size: 42px;
-  }
-
   nav {
-    padding: 20px;
+    padding: 15px;
+
+    flex-direction: column;
+
+    gap: 15px;
+  }
+
+  nav h1 {
+    font-size: 24px;
+
+    text-align: center;
+  }
+
+  .nav-buttons {
+    justify-content: center;
+
+    width: 100%;
+  }
+
+  .nav-buttons button {
+    padding: 10px 14px;
+
+    font-size: 14px;
+  }
+
+  .pagina {
+    padding:
+      170px 20px 60px;
+  }
+
+  .hero {
+    flex-direction: column;
+
+    text-align: center;
+
+    gap: 40px;
+  }
+
+  .hero-text {
+    width: 100%;
+  }
+
+  .tag {
+    font-size: 14px;
+  }
+
+  .hero h2 {
+    font-size: 42px;
+
+    line-height: 1.2;
+  }
+
+  .descricao {
+    font-size: 18px;
+
+    line-height: 1.6;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+
+    width: 100%;
+  }
+
+  .hero img {
+    width: 100%;
+
+    border-radius: 25px;
+  }
+
+  .glass-card {
+    padding: 25px;
+
+    width: 100%;
+  }
+
+  .glass-card h2 {
+    font-size: 34px;
+  }
+
+  .glass-card input {
+    width: 100%;
+  }
+
+  #resultado {
+    font-size: 15px;
+  }
+
+  .dashboard {
+    flex-direction: column;
+
+    align-items: center;
+  }
+
+  .card {
+    width: 100%;
+
+    max-width: 320px;
+  }
+
+  .titulo {
+    font-size: 40px;
+  }
+
+  .alertas {
+    width: 100%;
+  }
+
+  .alertas h3 {
+    font-size: 28px;
+
+    text-align: center;
+  }
+
+  .chat-container {
+    width: 100%;
+  }
+
+  .chat-container h2 {
+    font-size: 40px;
+  }
+
+  #chat-box {
+    height: 300px;
+  }
+
+  .chat-input {
+    flex-direction: column;
+  }
+
+  .chat-input input {
+    width: 100%;
+  }
+
+  .main-btn,
+  .secondary-btn {
+    width: 100%;
   }
 
 }
