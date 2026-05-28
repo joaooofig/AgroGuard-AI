@@ -6,17 +6,17 @@ O projeto foi criado com o objetivo de promover sustentabilidade no campo, ajuda
 
 A plataforma utiliza inteligência artificial para realizar análises agrícolas, oferecendo informações importantes para auxiliar na tomada de decisões no agronegócio.
 
-Além disso, o sistema conta com:
+## Além disso, o sistema conta com:
 
-análise inteligente de plantações
+- análise inteligente de plantações
 
-dashboard agrícola
+- dashboard agrícola
 
-monitoramento sustentável
+- monitoramento sustentável
 
-chatbot agrícola interativo
+-chatbot agrícola interativo
 
-indicadores de produção e umidade
+-indicadores de produção e umidade
 
 
 O AgroGuard AI busca unir tecnologia, inovação e sustentabilidade, mostrando como a inteligência artificial pode contribuir para o futuro da agricultura e para a preservação do meio ambiente.
