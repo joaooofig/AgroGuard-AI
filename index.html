@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+
+  <title>AgroGuard AI</title>
+
+  <link
+    rel="stylesheet"
+    href="style.css"
+  />
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+
+  <nav>
+
+    <h1>🌱 AgroGuard AI</h1>
+
+    <div class="nav-buttons">
+
+      <button onclick="trocarPagina('home')">
+        Home
+      </button>
+
+      <button onclick="trocarPagina('ia')">
+        IA
+      </button>
+
+      <button onclick="trocarPagina('dashboard')">
+        Dashboard
+      </button>
+
+      <button onclick="trocarPagina('chatbot')">
+        ChatBot
+      </button>
+
+      <button onclick="toggleTheme()">
+        🌙 Tema
+      </button>
+
+    </div>
+
+  </nav>
+
+  <!-- HOME -->
+
+  <section
+    id="home"
+    class="pagina ativa"
+  >
+
+    <div class="hero">
+
+      <div class="hero-text">
+
+        <p class="tag">
+          AGRICULTURA INTELIGENTE
+        </p>
+
+        <h2>
+          O Futuro do Agro com IA 🚀
+        </h2>
+
+        <p class="descricao">
+
+          Plataforma agrícola futurista utilizando
+          inteligência artificial para monitoramento,
+          sustentabilidade e automação agrícola.
+
+        </p>
+
+        <div class="hero-buttons">
+
+          <button
+            class="main-btn"
+            onclick="trocarPagina('ia')"
+          >
+            Explorar Projeto 🚀
+          </button>
+
+          <button
+            class="secondary-btn"
+            onclick="trocarPagina('dashboard')"
+          >
+            Dashboard 📊
+          </button>
+
+        </div>
+
+      </div>
+
+      <img
+        src="https://images.unsplash.com/photo-1500382017468-9049fed747ef"
+        alt="Plantação"
+      />
+
+    </div>
+
+  </section>
+
+  <!-- IA -->
+
+  <section
+    id="ia"
+    class="pagina"
+  >
+
+    <div class="glass-card">
+
+      <h2>
+        🤖 IA Agrícola
+      </h2>
+
+      <p>
+        Faça análises inteligentes de plantações.
+      </p>
+
+      <input
+        type="file"
+        id="imagem"
+      />
+
+      <button
+        class="main-btn"
+        onclick="analisarIA()"
+      >
+        Analisar com IA 🚀
+      </button>
+
+      <div id="loading"></div>
+
+      <div id="resultado"></div>
+
+    </div>
+
+  </section>
+
+  <!-- DASHBOARD -->
+
+  <section
+    id="dashboard"
+    class="pagina"
+  >
+
+    <h2 class="titulo">
+      📊 Dashboard Inteligente
+    </h2>
+
+    <div class="dashboard">
+
+      <div class="card">
+
+        <h3>🌡 Temperatura</h3>
+
+        <p id="temp">
+          26°C
+        </p>
+
+      </div>
+
+      <div class="card">
+
+        <h3>💧 Umidade</h3>
+
+        <p id="umidade">
+          68%
+        </p>
+
+      </div>
+
+      <div class="card">
+
+        <h3>🌬 Vento</h3>
+
+        <p id="vento">
+          14km/h
+        </p>
+
+      </div>
+
+      <div class="card">
+
+        <h3>🌧 Chuva</h3>
+
+        <p id="chuva">
+          32%
+        </p>
+
+      </div>
+
+    </div>
+
+    <div class="alertas">
+
+      <h3>
+        🔔 Alertas Inteligentes
+      </h3>
+
+      <div id="notificacoes"></div>
+
+    </div>
+
+  </section>
+
+  <!-- CHATBOT -->
+
+  <section
+    id="chatbot"
+    class="pagina"
+  >
+
+    <div class="chat-container">
+
+      <h2>
+        💬 AgroBot AI
+      </h2>
+
+      <div id="chat-box"></div>
+
+      <div class="chat-input">
+
+        <input
+          type="text"
+          id="mensagem"
+          placeholder="Digite sua pergunta..."
+        />
+
+        <button
+          class="main-btn"
+          onclick="enviarMensagem()"
+        >
+          Enviar 🚀
+        </button>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
