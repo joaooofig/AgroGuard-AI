@@ -14,9 +14,9 @@ A plataforma utiliza inteligência artificial para realizar análises agrícolas
 
 - monitoramento sustentável
 
--chatbot agrícola interativo
+- chatbot agrícola interativo
 
--indicadores de produção e umidade
+- indicadores de produção e umidade
 
 
 O AgroGuard AI busca unir tecnologia, inovação e sustentabilidade, mostrando como a inteligência artificial pode contribuir para o futuro da agricultura e para a preservação do meio ambiente.
