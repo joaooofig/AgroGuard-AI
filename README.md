@@ -204,7 +204,3 @@ Projeto desenvolvido por:
 ## João Guilherme
 
 ---
-
-# 🌱 AGROGUARD AI
-
-## Tecnologia • Sustentabilidade • Inovação • Futuro
