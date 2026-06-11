@@ -206,5 +206,4 @@ Projeto desenvolvido por:
 # Colégio Estadual Nilo Peçanha
 ## Jaguariaíva PR
 
-### Alunos: João, Gysele, Estefane e Otavio.
 ---
