@@ -1,4 +1,4 @@
-a# 🌱 AGROGUARD AI
+# 🌱 AGROGUARD AI
 
 ## Inteligência Artificial Aplicada à Agricultura Sustentável
 
